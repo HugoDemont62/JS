@@ -17,6 +17,11 @@
 //}
 //
 //console.log(add(4, 6))
+//if (person.happy === true){
+//    console.log("Vous êtes heureux");
+//}else {
+//    console.log("Pourquoi t triste enculé ?");
+//}
 
 let s = ' {"name": "Hugo", "age": "19 ans", "numbers":[12,17], "happy": false}';
 let person = JSON.parse(s);
@@ -25,10 +30,10 @@ console.log(person.name); // Retourne Hugo
 let w = JSON.stringify(person)
 console.log(w);
 
+let t = [1,5,8,4];
+console.log(t.length);
 
-if (person.happy = true){
-    console.log("Vous êtes heureux");
-}else {
-    console.log("Pourquoi t triste enculé ?");
+for (let i =0; i<t.length; i++){
+
 }
 
