@@ -37,3 +37,15 @@ for (let i =0; i<t.length; i++){
     console.log(i,t[i])
 }
 
+let t2 = [];
+console.log(t2.length);
+
+for (let i = 0; i<10; i++){
+    t.push(i)
+}
+console.log(t[3]+t[5]);
+
+
+function hello() {
+    console.log("Hello");
+}
