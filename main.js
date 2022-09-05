@@ -101,13 +101,40 @@
 //console.log(tab.length);
 
 // Exo 6
-let tab = [5, 6, 59, 8, 9, 10, 0];
+//let tab = [5, 0, 59, 8, 9, 10, 0];
+//let bool = false
+//for (let i = 0; i < tab.length; i++) {
+//    bool = tab[i] === 0;
+//    console.log(tab[i], bool);
+//    if (bool === true) {
+//        console.log("Le tableau comporte un 0, il se situe à là " + i + 1 + "em position, le parcours du tableau est interrompu ")
+//        break
+//    }
+//}
+// 2 methode
+//for (let i of tab) {
+//    bool = i === 0;
+//    console.log(i, bool);
+//    if (bool === true) {
+//        console.log("Le tableau comporte un 0. Le parcours du tableau est interrompu ")
+//        break
+//    }
+//}
+
+let tab = [5, 0, 59, 8, 9, 10, 0];
+let tab2 = [5, 0, 9, 8, 9, 10, 0];
 let bool = false
-for (let i = 0; i < tab.length; i++) {
-    bool = tab[i] === 0;
-    console.log(tab[i], bool);
+if (tab.length === tab2.length) {
+    for (let i = 0; i < tab.length; i++) {
+        if (tab[i] !== tab2[i]) {
+            console.log("Les deux tab sont différents");
+            bool = false
+            break;
+        } else {
+            bool = true
+        }
+    }
     if (bool === true) {
-        console.log("Le tableau comporte un 0, il se situe à là " + i + 1 + "em position, le parcours du tableau est interrompu ")
-        break
+        console.log("les deux tableaux sont identiques")
     }
 }
