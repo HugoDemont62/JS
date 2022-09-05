@@ -34,6 +34,6 @@ let t = [1,5,8,4];
 console.log(t.length);
 
 for (let i =0; i<t.length; i++){
-
+    console.log(i,t[i])
 }
 
