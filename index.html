@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <title>JS</title>
 </head>
-<body>
+<body id="body">
+<img style="height: 500px" id="imageId" src="one-piece-wanted-poster-template-a3-300dpi.jpg" alt="Image d'une affiche">
+<img style="height: 500px" id="imageId2" src="Locronanfini.jpg" alt="Image">
+<button onClick="rotateImg()">Click</button>
+<script>
+    let rotation = 0;
+    function rotateImg() {
+        rotation += 2;
+        if (rotation === 360) {
+            rotation = 0;
+        }
+        document.querySelector("#imageId").style.transform = `rotate(${rotation}deg)`; document.querySelector("#imageId2").style.transform = `rotate(${rotation}deg)`;
+    }
 
-<script src="Sujet1.js"></script>
+</script>
 </body>
 </html>
