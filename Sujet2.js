@@ -51,15 +51,15 @@
 
 // Exo 6
 
-function g(f,v){
-    let res = f(v);
-    console.log("res",res);
-    return res;
-
-}
-function carre(x) {
-    return x * x;
-}
-
-let r = g(carre,10);
-console.log("resultat de g ", r);
+//function g(f,v){
+//    let res = f(v);
+//    console.log("res",res);
+//    return res;
+//
+//}
+//function carre(x) {
+//    return x * x;
+//}
+//
+//let r = g(carre,10);
+//console.log("resultat de g ", r);
