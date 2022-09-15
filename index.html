@@ -5,9 +5,12 @@
     <title>JS</title>
 </head>
 <body id="body">
-<img style="height: 200px" id="imageId" src="papillo4.jpg" alt="Image Papi 04">
-<button onClick="">Click</button>
-<img  style="height: 200px" id="imageId2" src="papillo6.jpg" alt="Image Papi 06">
+<div>
+    <img style="height: 200px"src="papillo4.jpg" alt="Image Papi 04">
+    <button>Echanger</button>
+    <img  style="height: 200px"  src="papillo6.jpg" alt="Image Papi 06">
+</div>
+
 
 <script>
     //let rotation = 0;
@@ -19,8 +22,19 @@
     //    document.querySelector("#imageId").style.transform = `rotate(${rotation}deg)`; document.querySelector("#imageId2").style.transform = `rotate(${rotation}deg)`;
     //}
 
+    let p = document.querySelector("img:first-child");
+    let p2 = document.querySelector("img:last-child");
+    let b = document.querySelector("button");
 
 
+    function exchange(){
+        let img3 = p.src;
+        p.src = p2.src;
+        p2.src = img3;
+
+    }
+
+b.onclick = exchange;
 </script>
 </body>
 </html>
