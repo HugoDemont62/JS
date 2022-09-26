@@ -23,10 +23,34 @@
 //}
 //console.log(moyenne(critique));
 //
-let jsonFile = '{"name":"John","age":30, "city":"New York"}';
-
-let jsonDecrypt = JSON.parse(jsonFile);
-console.log(jsonDecrypt.name);
-jsonDecrypt.age += 1;
-
-console.log(JSON.stringify(jsonDecrypt));
+//let jsonFile = '{"name":"John","age":30, "city":"New York"}';
+//
+//let jsonDecrypt = JSON.parse(jsonFile);
+//console.log(jsonDecrypt.name);
+//jsonDecrypt.age += 1;
+//
+//console.log(JSON.stringify(jsonDecrypt));
+//let etudiant1 = {
+//    "nom": "Guerin",
+//    "prenom": "Killian",
+//    "age": 19,
+//    "web": [15, 12, 10, 9, 15],
+//    "com": [11, 11, 13, 10, 10],
+//    "audiovisuel": [16, 13, 14, 13, 14]
+//}
+//let etudiant2 = {
+//    "nom": "Sido",
+//    "prenom": "Corentin",
+//    "age": 20,
+//    "web": [9, 3, 20, 16, 15],
+//    "com": [18, 16, 13, 16, 15],
+//    "audiovisuel": [12, 13, 11, 16, 10]
+//}
+//
+//function ficheEtudiant(etudiant) {
+//    console.log(etudiant.nom +" "+ etudiant.prenom +" ("+ etudiant.age + ") ");
+//    console.log("Note de :");
+//    console.log(etudiant.com())
+//    console.log(etudiant.web())
+//}
+//ficheEtudiant(etudiant1);
