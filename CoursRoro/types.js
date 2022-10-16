@@ -8,19 +8,22 @@ const number = 1;
 const string = "jar";
 const boolean = true;
 const array = ["slt", false, 12, {}, []];
-const objet = { key: "value" };
+const objet = {key: "value"};
 
-let tab = [{ nom: "dubois" }, { prenom: "vincent" }];
+let tab = [
+    {nom: "dubois"},
+    {prenom: "vincent"}
+];
 
 const tab2 = [
-  {
-    nom: "dubois",
-    prenom: "vincent",
-  },
-  {
-    nom: "Leblond",
-    prenom: "Romain",
-  },
+    {
+        nom: "dubois",
+        prenom: "vincent",
+    },
+    {
+        nom: "Leblond",
+        prenom: "Romain",
+    },
 ];
 
 const combinedNames = tab2.map(obj => `${obj.prenom} ${obj.nom}`); //

@@ -9,24 +9,28 @@ const c = 3;
 //// Fonctions
 // 2 types de "function"
 function uneFonction(params) {
-  // ta fonction
+    // ta fonction
 }
 
 const uneAutreFonction = (params, a, b) => a + b; // implicit return
 // fonctions anonymes
-(function () {});
-() => {};
+(function () {
+});
+
+
+() => {
+};
 
 function somme(n1, n2) {
-  return n1 + n2;
+    return n1 + n2;
 }
 
 //// Tableaux (array) + les fonctions tableau
 
 const arr = [1, 2, 3, 4, 5, 6];
 const arr2 = [
-  [1, 2],
-  [3, 4],
+    [1, 2],
+    [3, 4],
 ]; // tableau 2 dimensions
 
 // longueur du tableau (nombre d'élément dans un tableau)
@@ -61,18 +65,18 @@ arr.every(number => number > 2); // false
 
 // find (return un élément du tableau)
 // filter (return un tableau de types T)
-arr.find(number => number == 2); // trouve le nombre qui est égal à 2 (dans ce cas c'est useless puisque ça va return 2 (l'élément en question))
+arr.find(number => number === 2); // trouve le nombre qui est égal à 2 (dans ce cas c'est useless puisque ça va return 2 (l'élément en question))
 arr.filter(number => number > 2); // filtre tous les nombres > 2
 
 // boucles
 // for "classique"
 for (let i = 0; i < arr.length; i++) {
-  // ce que tu veux faire
+    // ce que tu veux faire
 }
 
 // for of
 for (const element of arr) {
-  //   console.log(element);
+    //   console.log(element);
 }
 
 // comparaisons & opérateurs logiques

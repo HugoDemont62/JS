@@ -41,14 +41,17 @@
         divNombre.textContent = Math.random();
 
         divNombre.classList.add("nombre"); // ajoute la class à la div zebi
+
         document.querySelector(".nombres").prepend(divNombre); // "append" ajoute la div au HTML - preprend pareil mais en premiere prosition
       });
+
+
 
       const toggleSwitch = document.querySelector(".switch");
       toggleSwitch.addEventListener("click", () => {
         const allNumbers = document.querySelectorAll(".nombre");
-        const classes = [...allNumbers].map(e =>
-          e.classList.contains("hidden")
+        const classes = [...allNumbers].map(el =>
+          el.classList.contains("hidden")
         );
         const jar = classes.every(c => {
           return c === false;
@@ -58,6 +61,10 @@
           jar ? div.classList.add("hidden") : div.classList.remove("hidden")
         );
       });
+
+
+
+
     </script>
   </body>
 </html>
