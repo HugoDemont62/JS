@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #222;
+        color: white;
+        font-family: "Readex Pro";
+        font-size: 18px;
+      }
+      .red {
+        color: red;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>madiv</div>
+    <button class="btn">btn!</button>
+    <button class="switch">cache/affiche la liste des nombres</button>
+    <p id="slt">paragraphe</p>
+    <div class="nombres"></div>
+
+    <script>
+      // DOM = Document Object Model, = comment se structure le HTML dans du JS
+      // event, classList, textContent
+      // querySelector, querySelectorAll, getElementById
+      const btn = document.querySelector(".btn");
+      const monParagraphe = document.getElementById("slt"); // <-- nom de l'ID, sans le #
+      //                                  ^ sélecteur CSS
+
+      // avoir un nombre aléatoire (entre 0 et 1): Math.random()
+      btn.addEventListener("click", () => {
+        const divNombre = document.createElement("div"); // créer la div ?
+        divNombre.textContent = Math.random();
+
+        divNombre.classList.add("nombre"); // ajoute la class à la div zebi
+        document.querySelector(".nombres").prepend(divNombre); // "append" ajoute la div au HTML - preprend pareil mais en premiere prosition
+      });
+
+      const toggleSwitch = document.querySelector(".switch");
+      toggleSwitch.addEventListener("click", () => {
+        const allNumbers = document.querySelectorAll(".nombre");
+        const classes = [...allNumbers].map(e =>
+          e.classList.contains("hidden")
+        );
+        const jar = classes.every(c => {
+          return c === false;
+        });
+
+        allNumbers.forEach(div =>
+          jar ? div.classList.add("hidden") : div.classList.remove("hidden")
+        );
+      });
+    </script>
+  </body>
+</html>
